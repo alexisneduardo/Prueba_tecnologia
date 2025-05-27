@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prueba Ecológica</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("QvuLkSurQNRiYHv3Z"); // ← Reemplaza con tu User ID
+    })();
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eafaf1;
+      padding: 30px;
+    }
+    .container {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2d6a4f;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 12px 20px;
+      background-color: #2d6a4f;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    #notaFinal {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1b4332;
+    }
+    input[type="text"], textarea {
+      padding: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Prueba Ecológica</h1>
+
+    <label>Nombre del alumno:</label>
+    <input type="text" id="nombre" required />
+    <label>Curso:</label>
+    <input type="text" id="curso" required />
+
+    <!-- Preguntas de selección múltiple -->
+    <!-- (Preguntas 1 a 16 exactamente como las tenías antes, sin cambios) -->
+    <!-- Voy a acortarlas aquí para no repetir innecesariamente -->
+    
+    <!-- ... Tus preguntas 1 a 16 ... -->
+
+ <div class="question">
+      <p>1. ¿Cuál de las siguientes es una energía renovable?</p>
+      <input type="radio" name="q1" value="1"> Energía solar<br>
+      <input type="radio" name="q1" value="0"> Petróleo<br>
+      <input type="radio" name="q1" value="0"> Carbón<br>
+    </div>
+
+    <div class="question">
+      <p>2. ¿Qué acción ayuda al medio ambiente?</p>
+      <input type="radio" name="q2" value="1"> Reciclar electrónicos<br>
+      <input type="radio" name="q2" value="0"> Dejar luces encendidas<br>
+      <input type="radio" name="q2" value="0"> Comprar más plástico<br>
+    </div>
+
+    <div class="question">
+      <p>3. ¿Cuál de estas tecnologías contamina más?</p>
+      <input type="radio" name="q3" value="0"> Panel solar<br>
+      <input type="radio" name="q3" value="1"> Centro de datos<br>
+      <input type="radio" name="q3" value="0"> Bicicleta eléctrica<br>
+    </div>
+
+    <div class="question">
+      <p>4. ¿Qué material es más fácil de reciclar?</p>
+      <input type="radio" name="q4" value="1"> Aluminio<br>
+      <input type="radio" name="q4" value="0"> Plástico mezclado<br>
+      <input type="radio" name="q4" value="0"> Celulosa contaminada<br>
+    </div>
+
+    <div class="question">
+      <p>5. ¿Cuál es un efecto del uso excesivo de combustibles fósiles?</p>
+      <input type="radio" name="q5" value="1"> Cambio climático<br>
+      <input type="radio" name="q5" value="0"> Mejora de la calidad del aire<br>
+      <input type="radio" name="q5" value="0"> Reducción del calentamiento global<br>
+    </div>
+
+    <div class="question">
+      <p>6. ¿Qué producto es más amigable con el medio ambiente?</p>
+      <input type="radio" name="q6" value="0"> Bolsa de plástico<br>
+      <input type="radio" name="q6" value="1"> Bolsa reutilizable<br>
+      <input type="radio" name="q6" value="0"> Bolsa de aluminio<br>
+    </div>
+
+    <div class="question">
+      <p>7. ¿Cuál es una fuente de energía no renovable?</p>
+      <input type="radio" name="q7" value="0"> Eólica<br>
+      <input type="radio" name="q7" value="1"> Gas natural<br>
+      <input type="radio" name="q7" value="0"> Mareomotriz<br>
+    </div>
+
+    <div class="question">
+      <p>8. ¿Qué tipo de energía se produce con el sol?</p>
+      <input type="radio" name="q8" value="1"> Energía solar<br>
+      <input type="radio" name="q8" value="0"> Energía nuclear<br>
+      <input type="radio" name="q8" value="0"> Energía geotérmica<br>
+    </div>
+
+    <div class="question">
+      <p>9. ¿Qué es una huella de carbono?</p>
+      <input type="radio" name="q9" value="1"> La cantidad de CO₂ que emite una persona o actividad<br>
+      <input type="radio" name="q9" value="0"> El rastro de los animales en el bosque<br>
+      <input type="radio" name="q9" value="0"> Un tipo de calzado ecológico<br>
+    </div>
+
+    <div class="question">
+      <p>10. ¿Cuál es un problema asociado a los desechos electrónicos?</p>
+      <input type="radio" name="q10" value="1"> Contaminación de suelos y aguas<br>
+      <input type="radio" name="q10" value="0"> Mejora de la calidad del agua<br>
+      <input type="radio" name="q10" value="0"> Disminución del consumo<br>
+    </div>
+
+    <div class="question">
+      <p>11. ¿Qué país tiene una gran producción de energía solar en Latinoamérica?</p>
+      <input type="radio" name="q11" value="0"> Paraguay<br>
+      <input type="radio" name="q11" value="1"> Chile<br>
+      <input type="radio" name="q11" value="0"> Uruguay<br>
+    </div>
+
+    <div class="question">
+      <p>12. ¿Cuál de estas acciones reduce el consumo energético?</p>
+      <input type="radio" name="q12" value="1"> Apagar equipos cuando no se usan<br>
+      <input type="radio" name="q12" value="0"> Dejar el televisor encendido<br>
+      <input type="radio" name="q12" value="0"> Usar luces todo el día<br>
+    </div>
+
+    <div class="question">
+      <p>13. ¿Qué se obtiene del reciclaje de celulares antiguos?</p>
+      <input type="radio" name="q13" value="0"> Nuevas baterías<br>
+      <input type="radio" name="q13" value="1"> Materiales reutilizables como cobre y litio<br>
+      <input type="radio" name="q13" value="0"> Aire más limpio<br>
+    </div>
+
+    <div class="question">
+      <p>14. ¿Qué tecnología ayuda a reducir el uso de papel?</p>
+      <input type="radio" name="q14" value="0"> Impresora<br>
+      <input type="radio" name="q14" value="1"> Documentos digitales<br>
+      <input type="radio" name="q14" value="0"> Máquina de escribir<br>
+    </div>
+
+    <div class="question">
+      <p>15. ¿Cuál de estos aparatos consume más energía en el hogar?</p>
+      <input type="radio" name="q15" value="0"> Computador portátil<br>
+      <input type="radio" name="q15" value="1"> Aire acondicionado<br>
+      <input type="radio" name="q15" value="0"> Lámpara LED<br>
+    </div>
+
+    <div class="question">
+      <p>16. ¿Cuál es una práctica tecnológica sostenible?</p>
+      <input type="radio" name="q16" value="0"> Cambiar de celular cada año<br>
+      <input type="radio" name="q16" value="1"> Reparar equipos antes de desecharlos<br>
+      <input type="radio" name="q16" value="0"> Comprar tecnología por moda<br>
+    </div>
+    <!-- Pregunta de desarrollo -->
+    <div class="question">
+      <p>17. <strong>Pregunta de desarrollo</strong>: ¿Qué acciones puedes realizar en tu vida diaria para reducir tu impacto ambiental usando la tecnología de forma responsable?</p>
+      <textarea id="respuestaDesarrollo" rows="5"></textarea>
+    </div>
+
+    <button onclick="enviarNota()">Enviar Calificación</button>
+
+    <div id="notaFinal"></div>
+  </div>
+
+  <script>
+    function enviarNota() {
+      let total = 0;
+      for (let i = 1; i <= 16; i++) {
+        const opciones = document.getElementsByName("q" + i);
+        for (const op of opciones) {
+          if (op.checked) {
+            total += parseInt(op.value);
+          }
+        }
+      }
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const curso = document.getElementById("curso").value.trim();
+      const respuestaDesarrollo = document.getElementById("respuestaDesarrollo").value.trim();
+
+      if (!nombre || !curso) {
+        alert("Por favor, completa nombre y curso.");
+        return;
+      }
+
+      // Escala chilena: 1,0 a 7,0
+      let nota = ((total / 16) * 6) + 1;
+      nota = Math.round(nota * 10) / 10; // Redondear a un decimal
+
+      document.getElementById("notaFinal").innerText = `Tu nota automática (sin incluir la pregunta de desarrollo) es: ${nota}/7.0`;
+
+      emailjs.send("service_jira4eu", "template_p0em2uk", {
+        nombre: nombre,
+        curso: curso,
+        nota: nota,
+        desarrollo: respuestaDesarrollo
+      })
+      .then(() => {
+        alert("¡Calificación enviada al profesor!");
+      }, (error) => {
+        alert("Error al enviar correo: " + JSON.stringify(error));
+      });
+    }
+  </script>
+</body>
+</html>
